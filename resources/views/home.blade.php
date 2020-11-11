@@ -207,7 +207,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Dengan Tema : {{$d->theme}}</h5>
                     <p class="card-text">{!! Str::words($d->content,40, '...')!!}</p>
-                    <a href="#" class="btn btn-info">Baca Selengkapnya</a>
+                    <a href="{{route('home.show',$d->slug)}}" class="btn btn-info">Baca Selengkapnya</a>
                     <a href="{{route('home.edit',$d->slug)}}" class="btn btn-warning">Ubah</a>
                     <form style="display:inline-block" action="{{route('home.destroy',$d->slug)}}" method="POST"><input type="hidden" name="_method" value="delete">{{csrf_field()}}<button type="submit" class="btn btn-danger">Hapus</button></form>
                 </div>

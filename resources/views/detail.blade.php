@@ -11,7 +11,16 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    
+    <div class="container mt-5">
+      <div class="card" >
+          <h5 class="card-header">{{$data->title}}</h5>
+          <div class="card-body">
+              <h5 class="card-title">Dengan Tema : {{$data->theme}}</h5>
+              <p class="card-text">{{$data->content}}.</p>
+              <a href="{{route('home.index')}}" class="btn btn-danger">Kembali</a>
+          </div>
+      </div>
+    </div>
 
 
 

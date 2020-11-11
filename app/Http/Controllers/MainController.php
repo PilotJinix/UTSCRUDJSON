@@ -64,7 +64,16 @@ class MainController extends Controller
      */
     public function show($id)
     {
-        //
+        $dataJson = file_get_contents($this->base);
+        $datadata = json_decode($dataJson);
+        $data = [];
+        foreach ($datadata as $data1) {
+            if ($data1->slug == $id) {
+                $data = $data1;
+                break;
+            }
+        }
+        return view('detail', compact('data'));
     }
 
     /**
@@ -80,6 +89,7 @@ class MainController extends Controller
         $data = [];
         foreach ($datadata as $data1) {
             if ($data1->slug == $id) {
+
                 $data = $data1;
                 break;
             }
@@ -129,5 +139,5 @@ class MainController extends Controller
         }
         file_put_contents($this->base, json_encode($new));
         return redirect(route('home.index'));
-    }
+        }
 }
