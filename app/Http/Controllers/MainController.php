@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class MainController extends Controller
 {
@@ -48,10 +49,13 @@ class MainController extends Controller
             'title' => $request->name,
             'slug' => Str::slug($request->name),
             'theme' => $request->tema,
-            'content' => $request->content
+            'datetime' => date('Y-m-d H:i:s'),
+            'content' => $request->content,
+            'gambar' => md5($request->name) . '.' . $request->file('gambar')->getClientOriginalExtension()
         ];
-
+        $request->file('gambar')->move('storage/home/', $new->gambar);
         array_push($data, $new);
+        
         file_put_contents($this->base, json_encode($data,JSON_PRETTY_PRINT));
         return redirect(route('home.index'));
     }
@@ -113,6 +117,10 @@ class MainController extends Controller
                 $datadata[$i]->title = $request->name;
                 $datadata[$i]->theme = $request->tema;
                 $datadata[$i]->content = $request->content;
+                if ($request->file('gambar')) {
+                    $request->file('gambar')->move('storage/home/', $datadata[$i]->gambar);
+                }
+                $datadata[$i]->datetime = date('Y-m-d H:i:s');
                 break;
             }
         }

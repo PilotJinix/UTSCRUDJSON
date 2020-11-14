@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2491d624-5a98-48a3-8638-18eebc2200e1" name="IFA" url="http://proxy.ilkom.unej.ac.id">
+        <fileTransfer rootFolder="/home/182410103081" accessType="SFTP" host="proxy.ilkom.unej.ac.id" port="22301" sshConfigId="d5d8ca5d-b237-4dc4-b4bb-7718414fc6d3" sshConfig="182410103081@proxy.ilkom.unej.ac.id:22301 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
