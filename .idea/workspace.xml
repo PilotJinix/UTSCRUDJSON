@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="150aa44a-fc4b-4cb0-afb9-4520fc6ecfd9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/ubah.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ubah.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +123,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../project-ppl-web" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -148,20 +144,12 @@
       <updated>1605174244547</updated>
       <workItem from="1605174245699" duration="4847000" />
       <workItem from="1605187609716" duration="638000" />
+      <workItem from="1608534896297" duration="6134000" />
+      <workItem from="1608542812650" duration="1590000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="259" y="28" key="#SSH_Configurations" timestamp="1605175913257">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="259" y="28" key="#SSH_Configurations/0.0.1366.768/1366.-309.1920.1080@0.0.1366.768" timestamp="1605175913257" />
-    <state x="184" y="28" key="SettingsEditor" timestamp="1605175987119">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="184" y="28" key="SettingsEditor/0.0.1366.768/1366.-309.1920.1080@0.0.1366.768" timestamp="1605175987119" />
   </component>
 </project>
